@@ -1,0 +1,50 @@
+---
+title: "Creating Presentations and Report Writing: *Dynamically!*"
+author: "Hanna Eriksson"
+date: "March 22, 2017"
+output: 
+    word_document:
+    toc: TRUE
+---
+# Start of my presentation
+
+##Learning Goals
+
+- Static documents: what options are out there?
+    - A focus on markdown.
+- Dynamic documents: produce documents that integrate text with the code for the analysis that the
+text presents.
+- Produce documents in a variety of output formats (HTML/PDF/Word)
+
+# Intermediate slide
+
+## Part 1: Static Documents
+
+In this section, we’ll look at:
+
+- The types of static documents
+- Reproducibility of static documents
+
+
+## Two Tasks of Writing
+
+Two distinguishable tasks involved in writing a document:
+
+- Write/insert the content.
+    -Indicate how the content appears on the document.
+- These two features are bundled together in a markup language.
+    - “Markup” because authors would “mark up” their publication with instructions on how to display the various parts of the publication – title size, indentations, justification, etc.
+    - Note: MS products combine these two steps into one editor.
+- “View source” of this document.
+
+Part 2:
+
+We built a linear regression model.
+
+```{r, echo=FALSE, fig.width=4, fig.height=3, fig.align='center'}
+
+m1 <- lm(mpg ~ wt, data = mtcars)
+plot(m1)
+```
+
+The slope of the regression is `r round(coef(m1))[1]`.
