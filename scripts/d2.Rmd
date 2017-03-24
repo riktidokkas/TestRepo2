@@ -25,6 +25,8 @@ In this section, we’ll look at:
 - The types of static documents
 - Reproducibility of static documents
 
+## New slide
+
 
 ## Two Tasks of Writing
 
