@@ -10,6 +10,8 @@ output:
 
 ##Learning Goals
 
+## Blutt
+
 - Static documents: what options are out there?
     - A focus on markdown.
 - Dynamic documents: produce documents that integrate text with the code for the analysis that the
